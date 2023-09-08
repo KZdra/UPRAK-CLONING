@@ -14,8 +14,16 @@
     box-sizing: border-box;
 }
 
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+body {
+    background-color: rgb(51, 1, 51);
+}
 .top-navbar-codaheader {
-    background-color: purple;
+    background-color: rgb(107, 0, 107);
 }
 
 
@@ -47,6 +55,7 @@
     display: inline-flex;
     align-items: center;
     width: 100%;
+    overflow: hidden;
 }
 
 .imglink a {
@@ -76,6 +85,8 @@
     line-height: 26px;
     text-overflow: ellipsis;
     padding-left: 10px;
+    overflow: hidden;
+    padding-bottom: 3px;
 }
 
 
@@ -99,7 +110,7 @@
 
 .bell-wrapper {
     display: inline-flex;
-    padding: 10px;
+    padding: 20px;
 }
 
 .bell-wrapper i {
@@ -110,4 +121,100 @@
     display: flex;
     justify-content: flex-end;
     margin-left: 3px;
+}
+
+.daftar {
+    background-color: rgb(201, 43, 201);
+    border: none;
+    height: 40px;
+    width: 100px;
+    border: 1px solid rgb(201, 43, 201);
+    border-radius: 20px;
+    margin-bottom: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    color: white;
+    font-family: Noto-Regular;
+    font-weight: bold;
+    font-size: 0.895rem;
+    box-shadow: -5px 5px 10px rgba(0,0,0,.16);
+    cursor: pointer;
+}
+
+
+.home-feed-container {
+    display: flex ;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    font-family: Noto-Regular;
+    font-weight: bold;
+    color: white;
+    line-height: 20px;
+}
+
+.produk-list-cont {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.produk-list-title {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.produk-list-title h2 {
+    font-family: helvetica;
+    font-size: 2rem;
+    line-height: 40px;
+    padding: 0 16px;
+    margin: 0;
+    max-width: 100%;
+}
+
+.produk-card-cont {
+    display: inline-flex;
+    justify-content: center;
+    padding: 8px;
+    text-align: center;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+.produk-link-txt {
+    background-color: rgb(158, 4, 158);
+    color: white;
+    display: inline-flex;
+    text-decoration: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.produk-card-image {
+    height: auto;
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.produk-card-title {
+    padding: 8px 8px 19px;
+    max-width: 100%;
+    font-family: Noto-Regular;
+    font-size: 0.8rem;
+}
+
+
+.produk-list-items {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 8px;
 }
