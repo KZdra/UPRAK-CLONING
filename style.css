@@ -8,6 +8,11 @@
     src: url("fonts/NotoSans-Regular.ttf");
 }
 
+@font-face {
+    font-family: chrone;
+    src: url("fonts/Chrone.ttf");
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -217,4 +222,54 @@ body {
     display: flex;
     flex-flow: row wrap;
     margin: 8px;
+}
+
+
+.promotion-list-container {
+    background-image: url('img/bgpromo.jpg');
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    overflow: hidden;
+    background-size: 100% 200px;
+}
+
+.promotion-title {
+    font-size: 2rem;
+    line-height: 40px;
+    text-shadow: 12px 12px 15px purple;
+    margin: 0;
+    max-width: 100%;
+    font-family: chrone;
+    padding-left: 30px;
+}
+
+.promo-card-container {
+    margin-top: 20px;
+    display: flex;
+    padding-left: 20px;
+    column-gap: 30px;
+}
+
+.promo-card {
+    background-color: white;
+    padding: 10px;
+    height: 300px;
+    box-shadow: 10px 10px 15px black;
+    width:  300px;
+    align-items: center;
+    border-radius: 16px;
+}
+
+.promo-artikel {
+    color: black;
+    text-align: center;
+    padding-top: 26px;
+}
+
+.promo-image {
+    max-height: 210px;
+    object-fit: cover;
+    max-width: 100%;
+    border-radius: 16px;
+    
 }
