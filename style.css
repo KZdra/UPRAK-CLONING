@@ -289,7 +289,7 @@ banner{
     height: 280px;
     width: 800px;
     object-fit: cover;
-    opacity: 0;
+    opacity: 0 ;
     position: absolute;
     transition: all 0.5s ease;
 }
